@@ -1,4 +1,4 @@
-# Keycloak + NextJS + tailwind.
+# Keycloak + NextJS + Tailwind.
 
 Check this [example](https://keycloak-nextjs-example-santiblanko.vercel.app).
 
