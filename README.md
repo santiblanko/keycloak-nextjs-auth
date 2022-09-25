@@ -4,7 +4,7 @@ Check this [example](https://keycloak-nextjs-example-santiblanko.vercel.app).
 
 
 In this example I create a project with next + keycloak authentication + tailwind installed. Ideal if you neeed a fast auth in your next project. 
-You can use a free keycloak server like [cloud iam](https://www.cloud-iam.com/)
+You can use a free keycloak server like [cloud iam](https://www.cloud-iam.com/).
 
 I don't want to use a library for manage auth. I try to implement auth with keycloak from sratch and this is the result.
 I create a next middleware for intercept the auth pages and validate the token of protected pages.
@@ -16,7 +16,6 @@ const signInUrl = `${props.KEYCLOAK_BASE_URL}/auth/realms/${props.KEYCLOAK_REALM
 
 If you need a keycloack theme with tailwind integrated see my other [repo](https://keycloak-nextjs-example-santiblanko.vercel.app).
 If you want to add auth to a container check [my other implementation with oauth2proxy ](https://keycloak-nextjs-example-santiblanko.vercel.app)
-
 
 ## Env variables
 ```
@@ -30,3 +29,5 @@ KEYCLOAK_REALM=master
 ```
 yarn dev
 ```
+
+If this implementation looks great you can use the sponsor button.
