@@ -1,0 +1,47 @@
+{
+  "name": "keycloak-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "copy": "copyfiles -f ./node_modules/@axa-fr/react-oidc/dist/OidcServiceWorker.js ./public && copyfiles -f -s ./node_modules/@axa-fr/react-oidc/dist/OidcTrustedDomains.js ./public",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@axa-fr/react-oidc": "^5.14.0",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@headlessui/react": "^1.7.2",
+    "@heroicons/react": "^2.0.11",
+    "@mui/material": "^5.10.6",
+    "@palmabit/react-cookie-law": "^0.7.0",
+    "@strapi/design-system": "^1.2.3",
+    "@types/cookies": "^0.7.7",
+    "axios": "^0.27.2",
+    "cookies": "^0.8.0",
+    "cookies-next": "^2.1.1",
+    "heroicons": "^2.0.11",
+    "next": "12.2.2",
+    "next-auth": "^4.10.0",
+    "nookies": "^2.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5",
+    "typewriter-effect": "^2.19.0"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.5.1",
+    "@types/node": "^18.0.4",
+    "@types/react": "^18.0.15",
+    "autoprefixer": "^10.4.12",
+    "copyfiles": "^2.4.1",
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.7.4"
+  }
+}

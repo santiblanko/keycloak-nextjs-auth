@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading {
+    animation: pulse 1s infinite !important;
+}
+
+@keyframes pulse {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
