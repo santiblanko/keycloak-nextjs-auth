@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Header(props) {
   const signInUrl = `${props.KEYCLOAK_BASE_URL}/auth/realms/${props.KEYCLOAK_REALM}/protocol/openid-connect/auth?client_id=${props.KEYCLOAK_CLIENT_ID}&scope=openid%20profile%20email%20offline_access&response_type=code&redirect_uri=${props.KEYCLOAK_REDIRECT_URI}`;
-
+  const registerUrl = `${props.KEYCLOAK_BASE_URL}/auth/realms/${props.KEYCLOAK_REALM}/protocol/openid-connect/registrations?client_id=${props.KEYCLOAK_CLIENT_ID}&response_type=code&scope=openid email&redirect_uri=${props.KEYCLOAK_REDIRECT_URI}`
 
   console.log(signInUrl);
 
@@ -144,7 +144,7 @@ export default function Header(props) {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="http://localhost:8080/auth/realms/master/protocol/openid-connect/registrations?client_id=my-client&response_type=code&scope=openid email&redirect_uri=http://localhost:3000/api/auth/callback"
+                    href={registerUrl}
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 md:py-4 md:px-10 md:text-lg"
                   >
                     Get started
