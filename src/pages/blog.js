@@ -1,6 +1,6 @@
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-const signInUrl = `http://localhost:8080/auth/realms/master/protocol/openid-connect/auth?client_id=my-client&scope=openid%20profile%20email%20offline_access&response_type=code&redirect_uri=http://localhost:3000/api/auth/callback`;
+const signInUrl = `http://localhost:8080/auth/realms/master/protocol/openid-connect/auth?client_id=my-client&scope=openid%20profile%20email%20offline_access&response_type=code&blackirect_uri=http://localhost:3000/api/auth/callback`;
 import { Fragment } from 'react';
 
 const navigation = [
@@ -61,11 +61,11 @@ export default function Example() {
                   <img
                     alt="Your Company"
                     className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
                   />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black-500">
                     <span className="sr-only">Open main menu</span>
                     <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -84,7 +84,7 @@ export default function Example() {
               )}
               <a
                 href={signInUrl}
-                className="font-medium text-red-600 hover:text-red-500"
+                className="font-medium text-black-600 hover:text-black-500"
               >
                 Log in
               </a>
@@ -110,12 +110,12 @@ export default function Example() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=black&shade=600"
                     alt=""
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
+                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black-500">
                     <span className="sr-only">Close main menu</span>
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -134,7 +134,7 @@ export default function Example() {
               </div>
               <a
                 href={signInUrl}
-                className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-red-600 hover:bg-gray-100"
+                className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-black-600 hover:bg-gray-100"
               >
                 Log in
               </a>
@@ -163,15 +163,15 @@ export default function Example() {
                     name="email-address"
                     type="email"
                     autoComplete="email"
-                    required
-                    className="w-full appearance-none rounded-md border border-gray-300 bg-white px-4 py-2 text-base text-gray-900 placeholder-gray-500 focus:border-red-500 focus:outline-none focus:ring-red-500 lg:max-w-xs"
+                    requiblack
+                    className="w-full appearance-none rounded-md border border-gray-300 bg-white px-4 py-2 text-base text-gray-900 placeholder-gray-500 focus:border-black-500 focus:outline-none focus:ring-black-500 lg:max-w-xs"
                     placeholder="Enter your email"
                   />
                 </div>
                 <div className="mt-2 flex w-full flex-shrink-0 rounded-md shadow-sm sm:mt-0 sm:ml-3 sm:inline-flex sm:w-auto">
                   <button
                     type="button"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-red-600 px-4 py-2 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:inline-flex sm:w-auto"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-base font-medium text-white hover:bg-black-700 focus:outline-none focus:ring-2 focus:ring-black-500 focus:ring-offset-2 sm:inline-flex sm:w-auto"
                   >
                     Notify me
                   </button>
@@ -198,7 +198,7 @@ export default function Example() {
                 <div className="mt-3">
                   <a
                     href={post.href}
-                    className="text-base font-semibold text-red-600 hover:text-red-500"
+                    className="text-base font-semibold text-black-600 hover:text-black-500"
                   >
                     Read full story
                   </a>
