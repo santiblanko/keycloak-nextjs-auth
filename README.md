@@ -1,14 +1,21 @@
-# Keycloak + NextJS + tailwind installed.
+# Keycloak + NextJS + tailwind.
 
-Check this example for demo:
-[Example](https://keycloak-nextjs-example-santiblanko.vercel.app)
+Check this [example](https://keycloak-nextjs-example-santiblanko.vercel.app).
 
 In this example:
 next + keycloak auth + tailwind installed. Ideal if you fast auth.
 
-I don't want to use a library for manage auth. I try to implement auth with keycloak.
+I don't want to use a library for manage auth. I try to implement auth with keycloak and this is the result.
+I create a next middleware for intercept the auth pages and validate the token of protected pages.
+Also I call this other endpoint for authenticate the request and keycloak call a callback endpoint with the tokens and then create cookies.
+
+```
+const signInUrl = `${props.KEYCLOAK_BASE_URL}/auth/realms/${props.KEYCLOAK_REALM}/protocol/openid-connect/auth?client_id=${props.KEYCLOAK_CLIENT_ID}&scope=openid%20profile%20email%20offline_access&response_type=code&redirect_uri=${props.KEYCLOAK_REDIRECT_URI}`;
+```
+
 If you need a keycloack theme with tailwind integrated see my other [repo](https://keycloak-nextjs-example-santiblanko.vercel.app).
 If you want to add auth to a container check [my other implementation with oauth2proxy ](https://keycloak-nextjs-example-santiblanko.vercel.app)
+
 
 ## Env variables
 ```
