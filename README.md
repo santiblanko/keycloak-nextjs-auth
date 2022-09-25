@@ -6,7 +6,7 @@ Check this [example](https://keycloak-nextjs-example-santiblanko.vercel.app).
 In this example I create a project with next + keycloak authentication + tailwind installed. Ideal if you neeed a fast auth in your next project. 
 You can use a free keycloak server like [cloud iam](https://www.cloud-iam.com/)
 
-I don't want to use a library for manage auth. I try to implement auth with keycloak and this is the result.
+I don't want to use a library for manage auth. I try to implement auth with keycloak from sratch and this is the result.
 I create a next middleware for intercept the auth pages and validate the token of protected pages.
 Also I call this other endpoint for authenticate the request and keycloak call a callback endpoint with the tokens and then create cookies.
 
