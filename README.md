@@ -30,4 +30,6 @@ KEYCLOAK_REALM=master
 yarn dev
 ```
 
-If this implementation looks great you can use the sponsor button.
+If this implementation looks great you can share a beer using patreon or send me bitcoins.
+Patreon: https://patreon.com/santiblanko?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator
+Bitcoin direction: 31p39e3AtdEv8T2aU9y9D1XH9Wc5HEtRte
