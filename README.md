@@ -17,7 +17,7 @@ const signInUrl = `${props.KEYCLOAK_BASE_URL}/auth/realms/${props.KEYCLOAK_REALM
 If you need a keycloack theme with tailwind integrated see my other [repo](https://keycloak-nextjs-example-santiblanko.vercel.app).
 If you want to add auth to a container check [my other implementation with oauth2proxy ](https://keycloak-nextjs-example-santiblanko.vercel.app).
 
-Also I create a tailwindui theme for keycloak. check the [repo](https://keycloak-nextjs-example-santiblanko.vercel.app).
+Also I create a tailwindui theme for keycloak. check the [repo](https://github.com/santiblanko/tailwind-keycloak-theme).
 
 ## Env variables
 ```
